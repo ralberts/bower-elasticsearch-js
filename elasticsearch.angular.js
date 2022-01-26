@@ -18837,7 +18837,7 @@ function Host(config, globalConfig) {
 
   if (config.auth) {
     config.headers = config.headers || {};
-    config.headers.Authorization = 'Basic ' + btoa(config.auth);
+    config.headers.Authorization = 'Bearer ' + config.auth;
     delete config.auth;
   }
 
